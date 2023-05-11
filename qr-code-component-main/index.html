@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: thisFont;
+        src: url(./Outfit/Outfit-VariableFont_wght.ttf);
+        font-size: 15px;
+      }
+
+      body {
+        margin: 0;
+        background-color: hsl(212, 45%, 89%);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: thisFont;
+      }
+      .outerBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 500px; */
+        width: 240px;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        background-color: white;
+        border-radius: 20px;
+      }
+      .innerBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        border-radius: 15px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .fontBold {
+        width: 80%;
+        font-weight: 700;
+        text-align: center;
+        color: hsl(218, 44%, 22%);
+      }
+      .fontLight {
+        width: 80%;
+        font-weight: 400;
+        text-align: center;
+        color: hsl(220, 15%, 55%);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outerBox">
+      <div>
+        <img
+          class="innerBox"
+          src="./images/image-qr-code.png"
+          alt="a qr code"
+          width="200"
+          height="200"
+        />
+      </div>
+      <p class="fontBold">Improve your front-end skills by building projects</p>
+      <p class="fontLight">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level next level
+      </p>
+    </div>
+  </body>
+</html>
