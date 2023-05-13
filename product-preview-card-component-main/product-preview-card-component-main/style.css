@@ -1,0 +1,286 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #f2ebe3;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Fraunces;
+  src: url(./Fraunces/Fraunces-VariableFont_wght.ttf);
+}
+
+@media screen and (max-width: 700px) {
+  .BG {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .imageD {
+    display: none;
+  }
+  .imageM {
+    width: 343px;
+    height: 240px;
+    border-radius: 11px 11px 0px 0px;
+    box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+  }
+  .desc {
+    width: 343px;
+    height: 371px;
+    background: #ffffff;
+    border-radius: 0px 0px 11px 11px;
+    box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+  }
+  .tag {
+    margin: 24px auto auto 24px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.41em;
+
+    color: #6c7289;
+  }
+  .heading {
+    width: 285px;
+    margin: 12px auto auto 24px;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 32px;
+    /* or 103% */
+
+    letter-spacing: 0.02em;
+
+    color: #1c232b;
+  }
+
+  .para {
+    width: 294px;
+    margin: 16px auto auto 24px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    /* or 164% */
+
+    letter-spacing: 0.0075em;
+
+    color: #6c7289;
+  }
+
+  .pricing {
+    margin: 29px auto auto 24px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .priceNow {
+    margin: auto 19px auto 0;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 23px;
+    /* identical to box height, or 72% */
+
+    color: #3c8067;
+  }
+  .priceBefore {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    /* identical to box height, or 177% */
+
+    letter-spacing: 0.01em;
+    text-decoration-line: line-through;
+
+    color: #6c7289;
+  }
+  .ATContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 24px auto auto auto;
+    padding: 16px 62px;
+    background: #3c8067;
+    border-radius: 8px;
+  }
+  .cartLogo {
+    width: 15px;
+    height: 16px;
+  }
+
+  .butText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+
+    color: #ffffff;
+    margin: 0 0 0 11px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .BG {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .imageD {
+    width: 300px;
+    height: 450px;
+    background: url(./images/image-product-desktop.jpg);
+    border-radius: 11px 0px 0px 11px;
+    box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+  }
+  .imageM {
+    display: none;
+  }
+  .desc {
+    width: 300px;
+    height: 450px;
+    background: #ffffff;
+    border-radius: 0px 11px 11px 0px;
+    box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+  }
+  .tag {
+    margin: 32px auto auto 32px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.41em;
+
+    color: #6c7289;
+  }
+  .heading {
+    width: 195px;
+    margin: 21px auto auto 32px;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 32px;
+    /* or 103% */
+
+    letter-spacing: 0.02em;
+
+    color: #1c232b;
+  }
+
+  .para {
+    width: 230px;
+    margin: 23px auto auto 32px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    /* or 164% */
+
+    letter-spacing: 0.0075em;
+
+    color: #6c7289;
+  }
+
+  .pricing {
+    margin: 34px auto auto 32px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .priceNow {
+    margin: auto 19px auto 0;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 23px;
+    /* identical to box height, or 72% */
+
+    color: #3c8067;
+  }
+  .priceBefore {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    /* identical to box height, or 177% */
+
+    letter-spacing: 0.01em;
+    text-decoration-line: line-through;
+
+    color: #6c7289;
+  }
+  .ATContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 34px auto auto auto;
+    padding: 16px 62px;
+    background: #3c8067;
+    border-radius: 8px;
+  }
+  .cartLogo {
+    width: 15px;
+    height: 16px;
+  }
+
+  .butText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+
+    color: #ffffff;
+    margin: 0 0 0 11px;
+  }
+}
+
+.attribution {
+  font-family: "Montserrat";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  /* or 164% */
+
+  letter-spacing: 0.0075em;
+
+  color: #6c7289;
+  justify-items: flex-end;
+}
