@@ -1,0 +1,243 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsla(216, 12%, 8%, 1);
+  font-family: overpass;
+  color: white;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.frame {
+  background: hsla(215, 25%, 14%, 1);
+  border-radius: 28px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsla(213, 19%, 18%, 1);
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
+.rating {
+  color: white;
+}
+.rating:hover {
+  background-color: #fb7413;
+}
+.ratings > .selected {
+  background: hsl(217, 12%, 63%);
+}
+.Submit {
+  height: 47px;
+  background: #fb7413;
+  border: 1px solid #000000;
+  border-radius: 24px;
+  color: white;
+  letter-spacing: 0.14em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.Submit:hover {
+  background: white;
+  color: #fb7413;
+}
+
+.thanku {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thanku > .score {
+  background: #252d37;
+  border-radius: 25px;
+  color: hsla(25, 97%, 53%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  /* mobile */
+  .frame {
+    height: 327px;
+    width: 360px;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .state1 {
+    margin-left: 31px;
+    display: grid;
+  }
+  .star {
+    margin-top: 24px;
+  }
+  .heading {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .para {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .ratings {
+    margin-top: 18px;
+    margin-right: 24px;
+  }
+  .rating {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .Submit {
+    margin-top: 13px;
+    margin-right: 24px;
+  }
+  .thanku {
+    margin-right: 24px;
+  }
+  .thankuLogo {
+    margin-top: 32px;
+    width: 144px;
+    height: 96px;
+  }
+  .thanku > .score {
+    width: 168px;
+    height: 31px;
+
+    margin-top: 26px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .thanku > .head {
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .thanku > .para {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 700px) {
+  /* desktop */
+  .frame {
+    height: 410px;
+    width: 415px;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  .state1 {
+    margin-left: 37px;
+    display: grid;
+  }
+  .star {
+    margin-top: 30px;
+  }
+  .heading {
+    margin-top: 38px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+  }
+  .para {
+    width: 327px;
+    margin-top: 17px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .ratings {
+    margin-top: 21px;
+    margin-right: 38px;
+  }
+  .rating {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .Submit {
+    margin-top: 27px;
+    margin-right: 37px;
+    letter-spacing: 0.14em;
+  }
+  .thanku {
+    margin-right: 37px;
+  }
+  .thankuLogo {
+    margin-top: 48px;
+  }
+  .thanku > .score {
+    width: 193px;
+    height: 32px;
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .thanku > .head {
+    margin-top: 42px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+  }
+  .thanku > .para {
+    width: 336px;
+    margin-top: 17px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
